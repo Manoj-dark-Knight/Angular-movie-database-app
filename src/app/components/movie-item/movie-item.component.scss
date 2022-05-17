@@ -1,0 +1,44 @@
+@import '../../../Styles/styles';
+
+.movie-item{
+    position: relative;
+    display: block;
+    min-height: 325px;
+    border-radius: 5px;
+    background-color: $bgcolorLight;
+    border: 1px solid $lightGrey;
+
+    &-image{
+        img{
+            width: 100%;
+            border-radius: 5px;
+            height: 275px;
+            object-fit: cover;
+        }
+    }
+    &-rating{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 10px;
+        left: 10px;
+        background-color: $bgcolorLight;
+        border-radius: 5px;
+        padding: 5px 10px;
+        opacity: 90%;
+
+    }
+    &-title{
+        margin-left: 10px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        display: flex;
+        align-items: center;
+        // font-weight: bold;
+    }
+    .app-icon{
+        margin-right: 5px;
+        color: gold;
+        font-size: 20px;
+}
+}

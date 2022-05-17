@@ -1,0 +1,23 @@
+<div class="slider container-fluid">
+    <ng-container *ngFor="let item of items; let i = index">
+        <div class="slide" *ngIf="i == currentSliderIndex" @fade>
+            <div class="slide-bg">
+                <img class="slide-bg-image" [src]="imgSize.large + item.backdrop_path" alt="">
+            </div>
+            <div class="slide-pane">
+                <h2 class="name">{{item.title}}</h2>
+                <div class="meta">
+                    <div class="info">
+                        <span class="rating">
+                            <span class="app-icon">star</span><span class="rating-value">{{item.vote_average}}</span>
+                            <span class="column-bar">/10</span>
+                            <span class="column-bar">{{item.vote_count}} reviews</span>
+                            <span class="column-bar" id="release-date">{{item.release_date | date: 'yyyy'}}</span>
+                        </span>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </ng-container>
+    
+</div>

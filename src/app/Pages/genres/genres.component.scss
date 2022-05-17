@@ -1,0 +1,14 @@
+@import '../../../Styles/styles';
+
+.genre-link{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: $primaryColor;
+    color: $bgcolor;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 5px;
+}

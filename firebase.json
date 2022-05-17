@@ -1,0 +1,20 @@
+{
+  "hosting": {
+    "site": "angular-moviedb",
+    "public": "dist/movies-app",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "database": {
+    "rules": "database.rules.json"
+  }
+}
