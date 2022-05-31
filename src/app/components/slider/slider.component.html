@@ -5,7 +5,7 @@
                 <img class="slide-bg-image" [src]="imgSize.large + item.backdrop_path" alt="">
             </div>
             <div class="slide-pane">
-                <h2 class="name">{{item.title}}</h2>
+                <h2 class="name" id="heading">{{item.title}}</h2>
                 <div class="meta">
                     <div class="info">
                         <span class="rating">
@@ -16,6 +16,9 @@
                         </span>
                     </div>
                 </div> 
+                <div id="description" class="desc mt-6">
+                    {{ item.overview | slice: 0 : 200 }}<a [routerLink]="'/movie/'+ item.id">...see more</a>
+                  </div>
             </div>
         </div>
     </ng-container>
