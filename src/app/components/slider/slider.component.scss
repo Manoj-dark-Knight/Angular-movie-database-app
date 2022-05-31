@@ -68,10 +68,7 @@
                     }
                 }
             }
-            .desc {
-                font-size: 1.2rem;
-                line-height: 1.6;
-            }
+            
         }
         .stat{
            .stat{
@@ -82,22 +79,27 @@
         
     }
 }
+.desc {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: $lightGrey;
+}
 @media only screen and (max-width: 750px) {
     .slide-pane {
         width: 100%;
         // color: red;
     }
-    .desc {
-        width: 100%;
-        // color: red;
-        justify-content: center;
-        font-size: 0.9rem;
-        line-height: 0.5;
-    }
-    .slider{
-        // height: 40rem;
-        // text-align: center;
-    }
+    // .desc {
+    //     width: 100%;
+    //     // color: red;
+    //     justify-content: center;
+    //     font-size: 0.9rem;
+    //     line-height: 0.5;
+    // }
+    // .slider{
+    //     // height: 40rem;
+    //     // text-align: center;
+    // }
     // .slide{
     //     height: 40rem;
     // }
@@ -153,5 +155,20 @@
     }
     #release-date{
         width: 0%;
-    }      
+    }  
+    
+  }
+  @media only screen and (max-width: 900px) {
+    #heading{
+        font-size: 5vw;
+    }  
+}
+  @media only screen and (max-width: 595px) {
+    #heading{
+        font-size: 5vw;
+    }  
+    #description{
+        font-size: 3.4vw;
+    }
+      
   }
